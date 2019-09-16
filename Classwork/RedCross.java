@@ -24,8 +24,8 @@ public class RedCross extends JPanel
         g.setColor(Color.RED);
         g.fillRect(xCenter, yCenter, 10, 50);
         g.fillRect(xCenter, yCenter, 50, 10);
-        g.fillRect(xCenter, yCenter, 10, -40);
-        g.fillRect(xCenter, yCenter, -40, 10);
+        g.fillRect(xCenter, yCenter - 40, 10, 40);
+        g.fillRect(xCenter - 40, yCenter, 40, 10);
     }
 
     public static void main(String[] args)
