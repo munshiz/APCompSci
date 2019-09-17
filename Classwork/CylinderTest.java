@@ -1,6 +1,14 @@
+import java.util.Scanner;
+
 public class CylinderTest{
     public static void main(String[] args) {
-        Cylinder cyl = new Cylinder(2, 4);
-        System.out.println(cyl.getArea());
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the height");
+        double h = sc.nextDouble();
+        System.out.println("Enter the radius");
+        double r = sc.nextDouble();
+        Cylinder cyl = new Cylinder(h, r);
+        System.out.println("Your volume is: " + cyl.getArea());
+        sc.close();
     }
 }
