@@ -27,6 +27,8 @@ public class Target extends JPanel
         g.fillOval(xCenter - 35, yCenter - 35, 70, 70);
         g.setColor(Color.RED);
         g.fillOval(xCenter - 20, yCenter - 20, 40, 40);
+        System.out.println("Minecraft " +
+        "is epic");
     }
 
     public static void main(String[] args)

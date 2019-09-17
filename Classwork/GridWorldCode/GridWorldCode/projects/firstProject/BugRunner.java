@@ -14,9 +14,10 @@
  * @author Cay Horstmann
  */
 
-import info.gridworld.actor.ActorWorld;
-import info.gridworld.actor.Bug;
-import info.gridworld.actor.Rock;
+
+import GridWorldCode.framework.info.gridworld.actor.ActorWorld;
+import GridWorldCode.framework.info.gridworld.actor.Bug;
+import GridWorldCode.framework.info.gridworld.actor.Rock;
 
 /**
  * This class runs a world that contains a bug and a rock, added at random
