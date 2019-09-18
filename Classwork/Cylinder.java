@@ -8,7 +8,7 @@ public class Cylinder{
         height = h;
     }
     
-    public double getArea(){
+    public double getVolume(){
         double Area = circle.getArea() * height;
         return Area;
     }

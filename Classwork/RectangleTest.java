@@ -3,9 +3,9 @@ import java.util.Scanner;
 public class RectangleTest{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter Length:");
+        System.out.print("Enter Length: ");
         double l = sc.nextDouble();
-        System.out.println("Enter Height:");
+        System.out.print("Enter Height: ");
         double h = sc.nextDouble();
         Rectangle rectangle = new Rectangle(l,h);
         System.out.println("Your area is: " + rectangle.getArea());
