@@ -1,7 +1,7 @@
 public class Cylinder{
     
-    double height;
-    Circle circle;
+    private double height;
+    private Circle circle;
 
     public Cylinder(double h, double r){
         circle = new Circle(r);
