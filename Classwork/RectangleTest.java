@@ -8,7 +8,7 @@ public class RectangleTest{
         System.out.print("Enter Height: ");
         double h = sc.nextDouble();
         Rectangle rectangle = new Rectangle(l,h);
-        System.out.println("Your area is: " + rectangle.getArea());
+        System.out.println("Your area is: " + rectangle.getArea() + " Your perimeter is: " + rectangle.getPerimeter());
         sc.close();
     }
 }

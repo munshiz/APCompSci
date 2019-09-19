@@ -12,5 +12,4 @@ public class Cylinder{
         double Area = circle.getArea() * height;
         return Area;
     }
-    
-}
+} 
