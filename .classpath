@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="GridWorldCode/GridWorldCode/projects/critters/|GridWorldCode/GridWorldCode/projects/boxBug/|GridWorldCode/GridWorldCode/projects/firstProject/|GridWorldCode/GridWorldCode/framework/" kind="src" path="Classwork"/>
+	<classpathentry kind="src" path="Classwork/GridWorldCode/GridWorldCode/framework"/>
+	<classpathentry kind="src" path="Classwork/GridWorldCode/GridWorldCode/projects/boxBug"/>
+	<classpathentry kind="src" path="Classwork/GridWorldCode/GridWorldCode/projects/critters"/>
+	<classpathentry kind="src" path="Classwork/GridWorldCode/GridWorldCode/projects/firstProject"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

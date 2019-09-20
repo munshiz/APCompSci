@@ -1,35 +1,28 @@
 import java.awt.Image;
 import java.awt.Graphics;
-import java.util.Random;
-import java.util.ArrayList;
-import java.util.List;
+
 public class Coin{
     
-    Graphics g;
-    private boolean whichCoin;
-    private Image currentImage;
-    List<Image> coinSides = new ArrayList<Image>();
+    private boolean whichCoin = true;
+    private Image head;
+    private Image tail;
 
     public Coin(Image h, Image t){
-        coinSides.add(h); 
-        coinSides.add(t);
-        whichCoin = true;
-        currentImage = coinSides.get(0);
-    }
+        head = h;
+        tail = t;
+        }
 
     public void flip(){ 
-        if (whichCoin){
-            currentImage = coinSides.get(0);
-            whichCoin = !whichCoin;
-        }
-        if (whichCoin == false){
-            currentImage = coinSides.get(1);
-            whichCoin = !whichCoin;
-        }
+        whichCoin = !whichCoin;
     }
 
     public void draw(Graphics g, int x, int y)
     {
-        g.drawImage(currentImage, x, y, null);
+        if (whichCoin){
+            g.drawImage(head, 50, 50, null);
+        }
+        if (!whichCoin){
+            g.drawImage(tail, 50, 50, null);
+        }
     }
 }
