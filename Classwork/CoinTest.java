@@ -6,8 +6,8 @@ public class CoinTest extends JPanel implements ActionListener{
 private Coin coin;
 
 public CoinTest (){
-        Image heads = (new ImageIcon("D:\\Pictures\\APCS\\APCompSci\\Classwork\\head.jpg")).getImage();
-        Image tails = (new ImageIcon("D:\\Pictures\\APCS\\APCompSci\\Classwork\\tail.jpg")).getImage();
+        Image heads = (new ImageIcon("D:\\Pictures\\APCS\\APCompSci\\Classwork\\head.png")).getImage();
+        Image tails = (new ImageIcon("D:\\Pictures\\APCS\\APCompSci\\Classwork\\tail.png")).getImage();
         coin = new Coin(heads, tails);
 
         Timer clock = new Timer(2000, this);
