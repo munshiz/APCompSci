@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TriangleTest",
+            "request": "launch",
+            "mainClass": "TriangleTest"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Booktest",
+            "request": "launch",
+            "mainClass": "Booktest"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CoinTest",
+            "request": "launch",
+            "mainClass": "CoinTest"
+        }
+    ]
+}

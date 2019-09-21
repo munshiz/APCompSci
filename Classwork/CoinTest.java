@@ -6,8 +6,8 @@ public class CoinTest extends JPanel implements ActionListener{
 private Coin coin;
 
 public CoinTest (){
-        Image heads = (new ImageIcon("D:\\Pictures\\APCS\\APCompSci\\Classwork\\head.png")).getImage();
-        Image tails = (new ImageIcon("D:\\Pictures\\APCS\\APCompSci\\Classwork\\tail.png")).getImage();
+        Image heads = (new ImageIcon("Coin/head.png")).getImage();
+        Image tails = (new ImageIcon("Coin/tail.png")).getImage();
         coin = new Coin(heads, tails);
 
         Timer clock = new Timer(2000, this);
@@ -27,8 +27,7 @@ public CoinTest (){
         repaint();
     }
 
-    public static void main(String[] args)
-        {
+    public static void main(String[] args){
             JFrame w = new JFrame("Flipping coin");
             w.setSize(1155, 1155);
             w.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
