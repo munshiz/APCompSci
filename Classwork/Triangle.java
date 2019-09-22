@@ -1,41 +1,26 @@
 import java.lang.Math;
 
-
-
 public class Triangle{
-    
-    private int[] xcoord = {0,0,0};
-    private int[] ycoord = {0,0,0};
-    
-    
+    private double[] sides = {0, 0 ,0};
+
     Triangle(int x1, int y1, int x2, int y2, int x3, int y3){
-        xcoord[0] = x1;
-        xcoord[1] = x2;
-        xcoord[2] = x3;
-        ycoord[0] = y1;
-        ycoord[1] = y1;
-        ycoord[2] = y1;
+        sides[0] = calculateDistance(x1, x2, y1, y2);
+        sides[1] = calculateDistance(x2, x3, y2, y3);
+        sides[2] = calculateDistance(x3, x1, y3, y1);
     } 
 
-    public double calculateDistance(int x1, int y1,int x2, int y2){
-        return Math.sqrt(Math.pow(2,(x2 - x1)) + Math.pow(2,(y2 - y1)));
+    public double calculateDistance(int x2, int x1, int y2, int y1){
+        return Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2));
     }
-    
+
     public double getArea(){
-        double one = calculateDistance(xcoord[0], xcoord[1], ycoord[0], ycoord[1]);
-        double two = calculateDistance(xcoord[1], xcoord[2], ycoord[1], ycoord[2]);
-        double three = calculateDistance(xcoord[2], xcoord[0], ycoord[2], ycoord[0]);
         double Svalue = getPerimeter() / 2;
-        double Area = Math.sqrt(Svalue * (Svalue - one) * (Svalue - two) * (Svalue - three));
+        double Area = Math.sqrt(Svalue * (Svalue - sides[0]) * (Svalue - sides[1]) * (Svalue - sides[2]));
         return Area;
     }
+
     public double getPerimeter(){
-        double one = calculateDistance(xcoord[0], xcoord[1], ycoord[0], ycoord[1]);
-        double two = calculateDistance(xcoord[1], xcoord[2], ycoord[1], ycoord[2]);
-        double three = calculateDistance(xcoord[2], xcoord[0], ycoord[2], ycoord[0]);
-        System.out.println(one + two + three);
-        
-        return (one + two + three);
+        return (sides[0] + sides[1] + sides[2]);
     }
     
 
