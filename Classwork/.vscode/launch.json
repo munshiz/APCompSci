@@ -2,6 +2,18 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Dogtest",
+            "request": "launch",
+            "mainClass": "Dogtest"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Stocktest",
+            "request": "launch",
+            "mainClass": "Stocktest"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - TriangleTest",
             "request": "launch",
             "mainClass": "TriangleTest"

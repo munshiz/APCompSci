@@ -16,9 +16,10 @@ public class TriangleTest{
         int x3 = sc.nextInt();
         System.out.println("Enter the y coordinate for your third point");
         int y3 = sc.nextInt();
+        sc.close();
         
-        Triangle tri = new Triangle(x1, y1, x2, y2, x3, y3);
-        System.out.println("\n" + "Your area is: " + tri.getArea());
-        System.out.println("Your perimeter is: " + tri.getPerimeter());
+        Triangle triangle = new Triangle(x1, y1, x2, y2, x3, y3);
+        System.out.println("\n" + "Area: " + triangle.getArea());
+        System.out.println("Perimeter: " + triangle.getPerimeter());
     }
 }
