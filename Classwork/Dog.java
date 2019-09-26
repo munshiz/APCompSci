@@ -11,5 +11,7 @@ public class Dog{
         return 13 + 7 * (Age - 1);
     }
 
-
+    public String getName(){
+        return this.Name;
+    }
 }
