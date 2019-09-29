@@ -1,10 +1,12 @@
-public class Cat extends Dog{
-    private int Age;
+public class Cat {
+     private String name;
+     private int Age;
     public Cat(String name, int Age){
-        super (name, Age);
+        this.name = name;
         this.Age = Age;
+
     }
-   // @Override
+   
     public int convertToHumanAge(){
         if (Age == 1){
             return 15;
@@ -16,4 +18,8 @@ public class Cat extends Dog{
             return 24 + (4 * (Age - 2));
         }
     }
+    public String getName(){
+        return this.name;
+    }
+   
 }
