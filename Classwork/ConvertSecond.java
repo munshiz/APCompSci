@@ -1,6 +1,4 @@
 import java.util.Scanner;
-import java.util.ArrayList;
-
 public class ConvertSecond{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -10,6 +8,5 @@ public class ConvertSecond{
         String[] responses = input.split(" ");
         int answer = Integer.parseInt(responses[0]) * 3600 + Integer.parseInt(responses[2]) * 60 + Integer.parseInt(responses[4]);
         System.out.println("In seconds: " + answer);
-        
-    }
+        }
 }

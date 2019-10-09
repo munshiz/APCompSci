@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import java.lang.Math;
+import java.util.ArrayList;
 
 public class BinaryProject{
     public static void main(String[] args) {
@@ -40,14 +41,32 @@ public class BinaryProject{
     }
     
     public static String convertToDecimal(String Binary){
-        return String.valueOf(Integer.parseInt(Binary, 2));
+        int Exponent = Binary.length();
+        
+        int currentValue = 0;
+        for (char c : Binary.toCharArray()){
+           Exponent--;
+           currentValue += Integer.parseInt(Character.toString(c)) * Math.pow(2, Exponent);
+       }
+       return String.valueOf(currentValue);
     }
 
     public static String convertToHex(String Decimal){
-        return (Integer.toHexString(Integer.parseInt(Decimal)));
+        ArrayList<String> remainders = new ArrayList<String>();
+        int Decimalbutnot = Integer.parseInt(Decimal);
+        
+        while (Decimalbutnot > 16){
+            Decimalbutnot = Decimalbutnot  / 16;
+            remainders.add(String.valueOf(Decimalbutnot % 16));
+        }
+        String finalp = "";
+        for (String s : remainders){
+            finalp = finalp + s;
+        }
+        return finalp;
     }
 
     public static String convertToBinary(String Hex){
-        return (Integer.toBinaryString(Integer.parseInt(Hex, 16)));
+        return Integer.toBinaryString(Integer.parseInt(Hex, 16));
     }
 }
