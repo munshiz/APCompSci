@@ -2,6 +2,18 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - h",
+            "request": "launch",
+            "mainClass": "h"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - BinaryProject",
+            "request": "launch",
+            "mainClass": "BinaryProject"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Dogtest",
             "request": "launch",
             "mainClass": "Dogtest"
